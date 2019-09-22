@@ -198,29 +198,29 @@ table {
 
 
 html {
-  font-size: 10px; }
+  font-size: .2rem; }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.4rem;/**/
   font-family: sans-serif;
   color: #333;
   font-family: "akkurat", sans-serif; }
 
 .container {
-  max-width: 1280px;
+  max-width: 25.6rem;
   margin: 0 auto; }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 25.6rem) {
   .container {
     width: 100%; } }
 
 .btn {
   display: inline-block;
-  height: 54px;
-  line-height: 54px;
+  height: 1.08rem;
+  line-height: 1.08rem;
   padding: 0 1.2em;
   text-align: center;
-  font-size: 18px;
+  font-size: .36rem;
   font-family: "moderat", sans-serif;
   transition: all .3s ease-out; }
   .btn:hover {
@@ -230,7 +230,7 @@ body {
 
 .btn--orange {
   background-color: #EE7A23;
-  border: 1px #EE7A23 solid;
+  border: .02rem #EE7A23 solid;
   color: #fff; }
   .btn--orange:hover {
     background-color: #fff;
@@ -238,7 +238,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  border: 1px #d1434a solid;
+  border: .02rem #d1434a solid;
   color: #d1434a; }
   .btn--white:hover {
     background-color: #d1434a;
@@ -246,7 +246,7 @@ body {
 
 .btn--red {
   background-color: #d1434a;
-  border: 1px #d1434a solid;
+  border: .02rem #d1434a solid;
   color: #fff; }
   .btn--red:hover {
     background-color: #fff;
@@ -254,7 +254,7 @@ body {
 
 .btn--gray-white {
   background-color: none;
-  border: 1px #605F5F solid;
+  border: .02rem #605F5F solid;
   color: #605F5F; }
   .btn--gray-white:hover {
     background-color: #605F5F;
@@ -262,7 +262,7 @@ body {
 
 .btn--dis {
   background-color: #ccc;
-  border: 1px #ccc solid;
+  border: .02rem #ccc solid;
   color: #fff;
   cursor: disabled; }
   .btn--dis:hover {
@@ -270,8 +270,8 @@ body {
     color: #fff; }
 
 input[type="text"], textarea {
-  padding: .5em 20px;
-  border: 1px solid #bbb;
+  padding: .5em .4rem;
+  border: .02rem solid #bbb;
   background: #white; }
 
 .up-down-btn {
@@ -280,18 +280,18 @@ input[type="text"], textarea {
 .i-up-down {
   position: relative;
   display: inline-block;
-  width: 14px;
-  height: 6px;
+  width: .28rem;
+  height: .12rem;
   vertical-align: middle;
   z-index: 2;
-  -ms-transform: translateY(2px);
-      transform: translateY(2px);
+  -ms-transform: translateY(.04rem);
+      transform: translateY(0.04rem);
   transition: transform .3s ease-out; }
   .i-up-down i {
     position: absolute;
     top: 0;
-    width: 8px;
-    height: 1px;
+    width: .16rem;
+    height: .02rem;
     background: #EE7A23; }
   .i-up-down .i-up-down-l {
     left: 0;
@@ -312,11 +312,11 @@ input[type="text"], textarea {
 .select-self-area {
   width: auto;
   background: #f0f0f0;
-  border-radius: 3px;
-  min-width: 50px;
-  max-width: 240px;
-  height: 30px;
-  line-height: 30px; }
+  border-radius: 0.06rem;
+  min-width: 1rem;
+  max-width: 4.8rem;
+  height: .6rem;
+  line-height: .6rem; }
   .select-self-area .select-ipt {
     display: block;
     height: 100%;
@@ -331,21 +331,21 @@ input[type="text"], textarea {
     width: 1.286em;
     height: 100%;
     background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: .02rem solid #ccc;
+    border-radius: 0.06rem;
     text-align: center; }
     .select-self-area .select-btn .i-up-down {
-      width: 8px;
+      width: .16rem;
       top: 0;
       left: 0; }
       .select-self-area .select-btn .i-up-down i {
-        width: 5px;
-        height: 2px;
+        width: .1rem;
+        height: 0.04rem;
         background-color: #605F5F; }
 
 .select-self-white .select-self-area {
   background: #fff;
-  border: 1px solid #ccc;
+  border: .02rem solid #ccc;
   border-radius: 0; }
 
 .select-self-white .select-btn {
@@ -355,23 +355,23 @@ input[type="text"], textarea {
 .select-options {
   display: none;
   position: absolute;
-  top: 30px;
+  top: .6rem;
   left: 0;
   width: 100%;
-  max-height: 210px;
+  max-height: 4.2rem;
   background: #f0f0f0;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 0.06rem 0.06rem;
   overflow-y: auto;
   z-index: 1; }
   .select-options li {
-    padding: .5em 15px;
-    border-top: 1px solid #e9e9e9;
+    padding: .5em 1.1rem;
+    border-top: .02rem solid #e9e9e9;
     text-align: left; }
     .select-options li:hover {
       color: #EE7A23; }
 
 .select-self-open {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 0.06rem 0.06rem 0 0; }
   .select-self-open .select-options {
     display: block; }
   .select-self-open .i-up-down .i-up-down-l {

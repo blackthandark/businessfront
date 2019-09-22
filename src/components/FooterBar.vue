@@ -1,27 +1,29 @@
 <template>
     <div>
-
       <router-view></router-view>
 
-      <mt-tabbar v-model="selected">
-        <mt-tab-item id="producthome">
-          <img slot="icon" :src="home_img">
-          首页
-        </mt-tab-item>
-        <mt-tab-item id="cart">
-          <img slot="icon" :src="cart_img">
-          购物车
-        </mt-tab-item>
-        <mt-tab-item id="my">
-          <img slot="icon" :src="my_img">
-          我的
-        </mt-tab-item>
-      </mt-tabbar>
+      <div class="footerbar" v-show="this.isShowFooterBar">
+        <mt-tabbar v-model="selected" fixed>
+          <mt-tab-item id="producthome">
+            <img slot="icon" :src="home_img">
+            首页
+          </mt-tab-item>
+          <mt-tab-item id="cart">
+            <img slot="icon" :src="cart_img">
+            购物车
+          </mt-tab-item>
+          <mt-tab-item id="my">
+            <img slot="icon" :src="my_img">
+            我的
+          </mt-tab-item>
+        </mt-tabbar>
+      </div>
     </div>
 
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
     export default {
         name: "FooterBar",
         data() {
@@ -32,7 +34,12 @@
             selected:'producthome'
           }
         },
-
+        computed:{
+          ...mapGetters(['isShowFooterBar'])
+        },
+      mounted(){
+        this.$router.push("/producthome")
+      },
         watch:{
           selected: function () {
             if(this.selected=='producthome'){
@@ -61,6 +68,8 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="stylus" scoped>
+  .bottombar
+    .bottomblank
+      margin-bottom :1.1rem
 </style>

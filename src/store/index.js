@@ -9,9 +9,9 @@ import * as mutations from './mutations'
 Vue.use(Vuex)
 
 const state={
-  userInfo:{
-    username:"zs"
-  }
+  userInfo:{},
+  ShowFooterBar:true,
+  SelectAddress:{}
 }
 
 export const store=new Vuex.Store({

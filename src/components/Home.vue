@@ -12,7 +12,8 @@
         components:{FooterBar},
         methods:{
 
-        }
+        },
+
     }
 </script>
 
